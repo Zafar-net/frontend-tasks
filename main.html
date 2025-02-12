@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Change Image on Click</title>
+    <title>Button Click Example</title>
 </head>
 <body>
 
-    <img id="myImage" src="./photo1.jpg" alt="First Image" width="300">
-    <br>
-    <button onclick="changeImage()">Change Image</button>
+    <p id="text">Hello!</p>
+    <button onclick="changeText()">Click me</button>
 
     <script>
-        function changeImage() {
-            document.getElementById("myImage").src = "./photo2.jpg";
+        function changeText() {
+            document.getElementById("text").textContent = "You clicked me!";
         }
     </script>
 
